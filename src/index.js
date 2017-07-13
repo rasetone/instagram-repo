@@ -5,12 +5,12 @@ import CreatePost from './components/CreatePost'
 import CreateUser from './components/CreateUser'
 import CreateUserIg from './components/CreateUserIg'
 import LoginUser from './components/LoginUser'
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router'
 import { ApolloClient, ApolloProvider, createNetworkInterface } from 'react-apollo'
 import 'tachyons'
 
 const networkInterface = createNetworkInterface({ 
-  uri: 'https://api.graph.cool/simple/v1/cj51rqk0vejp40175t3logldl'
+  uri: 'https://api.graph.cool/simple/v1/cj5275h35xjy40196zeuwze4o'
  })
 
 networkInterface.use([{
@@ -31,7 +31,7 @@ const client = new ApolloClient({ networkInterface })
 
 ReactDOM.render((
   <ApolloProvider client={client}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path='/' component={CreateUserIg} />
       <Route path='create' component={CreatePost} />
       <Route path='login' component={LoginUser} />
