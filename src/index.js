@@ -5,7 +5,7 @@ import CreatePost from './components/CreatePost'
 import CreateUser from './components/CreateUser'
 import CreateUserIg from './components/CreateUserIg'
 import LoginUser from './components/LoginUser'
-import { Router, Route, browserHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router'
 import { ApolloClient, ApolloProvider, createNetworkInterface } from 'react-apollo'
 import 'tachyons'
 
@@ -31,7 +31,7 @@ const client = new ApolloClient({ networkInterface })
 
 ReactDOM.render((
   <ApolloProvider client={client}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path='/' component={CreateUserIg} />
       <Route path='create' component={CreatePost} />
       <Route path='login' component={LoginUser} />
