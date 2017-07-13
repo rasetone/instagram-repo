@@ -10,7 +10,7 @@ import { ApolloClient, ApolloProvider, createNetworkInterface } from 'react-apol
 import 'tachyons'
 
 const networkInterface = createNetworkInterface({ 
-  uri: 'https://api.graph.cool/simple/v1/cj51rqk0vejp40175t3logldl'
+  uri: 'https://api.graph.cool/simple/v1/cj5275h35xjy40196zeuwze4o'
  })
 
 networkInterface.use([{
