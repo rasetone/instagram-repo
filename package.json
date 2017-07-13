@@ -5,6 +5,7 @@
   "devDependencies": {
     "react-scripts": "0.8.1"
   },
+  "homepage": "https://rasetone.github.io/instagram-repo",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.3.1",
